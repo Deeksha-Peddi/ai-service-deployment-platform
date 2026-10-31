@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Service Deployment Platform</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <header>
+        <h1>AI Service Platform</h1>
+        <span id="status">Checking service...</span>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <p class="eyebrow">CLOUD OPERATIONS</p>
+            <h2>AI Service Deployment Monitor</h2>
+            <p>Monitor application availability and deployment information.</p>
+        </section>
+
+        <section class="grid">
+            <div class="card">
+                <h3>Application</h3>
+                <p id="app-name">Loading...</p>
+            </div>
+
+            <div class="card">
+                <h3>Environment</h3>
+                <p id="environment">Loading...</p>
+            </div>
+
+            <div class="card">
+                <h3>Container Host</h3>
+                <p id="hostname">Loading...</p>
+            </div>
+
+            <div class="card">
+                <h3>Application Version</h3>
+                <p id="version">Loading...</p>
+            </div>
+        </section>
+
+        <section class="inference">
+            <h2>AI Inference Simulator</h2>
+            <p>Send a sample request to the simulated AI service.</p>
+
+            <input id="prompt" type="text" placeholder="Enter a sample prompt">
+            <button onclick="runInference()">Run Inference</button>
+
+            <pre id="result">Waiting for request...</pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>AI Service Deployment Platform | Docker & AWS Deployment</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+</body>
+</html>

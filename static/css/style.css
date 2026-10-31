@@ -1,0 +1,149 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b1120;
+    color: #e5e7eb;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 7%;
+    background: #111c30;
+    border-bottom: 1px solid #26344d;
+}
+
+header h1 {
+    font-size: 22px;
+    color: #ffffff;
+}
+
+#status {
+    color: #4ade80;
+    font-size: 14px;
+}
+
+main {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 25px;
+}
+
+.welcome {
+    margin-bottom: 35px;
+}
+
+.eyebrow {
+    color: #60a5fa;
+    letter-spacing: 3px;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.welcome h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.welcome p:last-child {
+    color: #94a3b8;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card, .inference {
+    background: #162238;
+    border: 1px solid #26344d;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+.card h3 {
+    color: #94a3b8;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 19px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.inference {
+    margin-top: 25px;
+}
+
+.inference h2 {
+    margin-bottom: 10px;
+}
+
+.inference p {
+    color: #94a3b8;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 13px;
+    width: 70%;
+    background: #0b1120;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    color: white;
+}
+
+button {
+    padding: 13px 20px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+pre {
+    margin-top: 20px;
+    padding: 15px;
+    background: #0b1120;
+    border-radius: 8px;
+    white-space: pre-wrap;
+    color: #4ade80;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #64748b;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    input {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .welcome h2 {
+        font-size: 25px;
+    }
+}
